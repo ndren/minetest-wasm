@@ -1,7 +1,0 @@
-minetest/
-build/
-build-*/
-sources/
-install/
-www/
-upload.sh

@@ -22,7 +22,7 @@ tar -zxvf "$SRC_DIR/$TARBALL"
 
 pushd "$TARNAME"
 
-emconfigure ./configure --disable-shared --prefix="$INSTALL_DIR" --with-ogg="$INSTALL_DIR"
+emconfigure ./configure --disable-shared --host=wasm32 --prefix="$INSTALL_DIR" --with-ogg="$INSTALL_DIR"
 emmake make
 emmake make install
 
